@@ -17,4 +17,4 @@ vendor
 .eslintcache
 .yarn-integrity
 wpackio.server.js+
- .DS_Store
+.DS_Store
