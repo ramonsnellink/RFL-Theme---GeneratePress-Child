@@ -1,0 +1,13 @@
+// Werkt niet, want er zit soms meer dan alleen een IMG in een P...
+// .single-post .post .entry-content {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	& p {
+// 		max-width: 640px;
+// 	}
+
+// 	& p.image-in-p {
+// 		max-width: 1280px;
+// 	}
+// }

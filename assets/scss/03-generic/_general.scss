@@ -1,0 +1,26 @@
+::-moz-selection {
+	/* Code for Firefox */
+	color: black;
+	background: var(--global--color-background-highlight);
+}
+
+::selection {
+	color: black;
+	background: var(--global--color-background-highlight);
+}
+body {
+	overflow-x: hidden;
+}
+
+// Links
+a {
+	color: var(--link--color-text);
+}
+a:hover {
+	color: var(--link--color-text-hover);
+}
+
+hr {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}

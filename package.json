@@ -1,0 +1,17 @@
+{
+	"name": "RFL_Theme",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"node-sass": "^5.0.0"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"watch": "node-sass assets/scss/ -o assets/css/ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w ",
+		"build": "node-sass assets/scss/ -o assets/css/"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}

@@ -1,0 +1,104 @@
+html {
+	line-height: 1.8em;
+}
+
+body {
+	font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	font-size: 1.125rem;
+	line-height: 1.8em;
+	color: var(--main--color-text);
+
+	font-weight: normal;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+// Links styles
+.wp-block a {
+	color: var(--wp--style--color--link, var(--global--color-primary));
+
+	&:hover {
+		text-decoration-style: dotted;
+	}
+
+	&:focus {
+		outline: 2px solid var(--wp--style--color--link, var(--global--color-primary));
+		text-decoration: none;
+	}
+}
+
+// Enforce the custom link color even if a custom background color has been set.
+// The extra specificity here is required to override the background color styles.
+.has-background {
+	// Target both current level and nested block.
+	.has-link-color a,
+	&.has-link-color a {
+		color: var(--wp--style--color--link, var(--global--color-primary));
+	}
+}
+
+button,
+a {
+	cursor: pointer;
+}
+
+.full-width-content .editor-styles-wrapper .wp-block,
+.full-width-content .editor-styles-wrapper .editor-post-title__block.wp-block,
+.full-width-content
+	.editor-styles-wrapper
+	.wp-block-group:not(.narrow)
+	.wp-block-group__inner-container {
+	max-width: $grid-width;
+}
+
+// .editor-post-title__block .editor-post-title__input,
+// .edit-post-visual-editor,
+// .edit-post-visual-editor * {
+// 	font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+// 		Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+// 		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+// }
+
+// .editor-post-title__block.wp-block {
+// 	max-width: $content-width;
+
+// 	/* Post title styling */
+// 	.editor-post-title__input {
+// 	}
+// }
+
+// /* Main column width */
+// .wp-block {
+// 	max-width: $content-width;
+
+// 	/* Wide column width */
+// 	&[data-align='wide'],
+// 	&[data-align='full'] {
+// 		max-width: none;
+// 	}
+// }
+
+// // Undo blockquote styles
+// .wp-block-quote:not(.is-large):not(.is-style-large) {
+// 	border-left: 0;
+// 	padding-left: 0;
+// }
+
+// // Fix space between image and caption
+// .wp-block-image {
+// 	line-height: 0;
+// }
+
+// // // Full width button
+// // .wp-block-button.is-style-full,
+// // .wp-block-button.is-style-full .block-editor-rich-text,
+// // div[data-type='core/button'] div[data-block] {
+// // 	display: block;
+// // }
+
+// // // Separator
+// // .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+// // 	max-width: 100%;
+// // }

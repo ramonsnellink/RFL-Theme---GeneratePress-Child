@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "editor-layout.css",
+	"sources": [
+		"../scss/editor-layout.scss",
+		"../scss/partials/_base.scss"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,mBAAmB,CAAC,sBAAsB,CAAC,SAAS;AACpD,mBAAmB,CAAC,sBAAsB,CAAC,yBAAyB,AAAA,SAAS;AAC7E,mBAAmB;AAClB,sBAAsB;AACtB,eAAe,AAAA,IAAK,CAAA,OAAO;AAC3B,gCAAgC,CAAC;CACjC,SAAS,ECCL,MAAM;CDAV"
+}
