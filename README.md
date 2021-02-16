@@ -4,7 +4,7 @@ This is a child theme for the GeneratePress theme.
 
 Nice things:
 
--  Added block editor support
+-  Added block editor colors
 -  Added custom block variations
 -  Added custom block styles
 -  Removed jQuery
