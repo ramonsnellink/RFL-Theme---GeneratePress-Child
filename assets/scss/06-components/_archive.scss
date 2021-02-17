@@ -39,11 +39,10 @@
 		& img {
 			width: 100%;
 			height: 100%;
-			transition: transform 0.3s ease-in-out, opacity 0.1s ease-in-out;
+			transition: opacity 0.1s ease-in-out;
 			opacity: 1;
 
 			&:hover {
-				transform: scale(1.1);
 				opacity: 0.8;
 				z-index: 1;
 			}
