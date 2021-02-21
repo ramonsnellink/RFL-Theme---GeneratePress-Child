@@ -37,6 +37,26 @@ add_theme_support( 'editor-color-palette', [
     ],
     
 ] );
+/** 
+ * Add Color Palette to GP customizer 
+*/
+
+
+add_filter( 'generate_default_color_palettes', 'tu_custom_color_palettes' );
+function tu_custom_color_palettes( $palettes ) {
+	$palettes = array(
+		'#000000',
+		'#FFFFFF',
+		'#F6D15E',
+		'#EAB204',
+		'#1C1C1B',
+		'#807F7E',
+		'#EBE9E6',
+		'#F7F6F5',
+	);
+	
+	return $palettes;
+}
 
 /** 
  * Add Reusable Blocks 
@@ -48,11 +68,26 @@ function be_reusable_blocks_admin_menu() {
 add_action( 'admin_menu', 'be_reusable_blocks_admin_menu' );
 
 
-
+/** 
+ * Add Editor styles
+*/
 function editor_styles() {
     wp_enqueue_style( 'editor-styles', get_stylesheet_directory_uri() . '/assets/css/editor-style.css', [], filemtime( get_stylesheet_directory() . '/assets/css/editor-style.css' ) );
     add_editor_style( 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap' );
 
 }
-
 add_action( 'enqueue_block_editor_assets', 'editor_styles', 99 );
+
+
+/** 
+ * Add custom default container paddings
+*/
+
+add_filter( 'generateblocks_defaults', function( $defaults ) {
+    $defaults['container']['paddingTop'] = '100';
+    $defaults['container']['paddingRight'] = '20';
+    $defaults['container']['paddingBottom'] = '100';
+    $defaults['container']['paddingLeft'] = '20';
+
+    return $defaults;
+} );
