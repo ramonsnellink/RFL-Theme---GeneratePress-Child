@@ -84,9 +84,9 @@ add_action( 'enqueue_block_editor_assets', 'editor_styles', 99 );
 */
 
 add_filter( 'generateblocks_defaults', function( $defaults ) {
-    $defaults['container']['paddingTop'] = '100';
+    $defaults['container']['paddingTop'] = '40';
     $defaults['container']['paddingRight'] = '20';
-    $defaults['container']['paddingBottom'] = '100';
+    $defaults['container']['paddingBottom'] = '40';
     $defaults['container']['paddingLeft'] = '20';
 
     return $defaults;
