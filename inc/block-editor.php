@@ -73,7 +73,7 @@ add_action( 'admin_menu', 'be_reusable_blocks_admin_menu' );
 */
 function editor_styles() {
     wp_enqueue_style( 'editor-styles', get_stylesheet_directory_uri() . '/assets/css/editor-style.css', [], filemtime( get_stylesheet_directory() . '/assets/css/editor-style.css' ) );
-    add_editor_style( 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap' );
+    // add_editor_style( 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap' ); // changed to system fonts
 
 }
 add_action( 'enqueue_block_editor_assets', 'editor_styles', 99 );

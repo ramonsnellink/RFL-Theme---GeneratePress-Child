@@ -288,7 +288,7 @@ hr .wp-block-separator.is-style-wide {
   line-height: 1.8em;
 }
 .block-editor__typewriter body {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
   line-height: 1.8em;
   color: var(--main--color-text);
@@ -316,7 +316,7 @@ hr .wp-block-separator.is-style-wide {
 .block-editor__typewriter .full-width-content .editor-styles-wrapper .wp-block,
 .block-editor__typewriter .full-width-content .editor-styles-wrapper .editor-post-title__block.wp-block,
 .block-editor__typewriter .full-width-content .editor-styles-wrapper .wp-block-group:not(.narrow) .wp-block-group__inner-container {
-  max-width: 1280px;
+  max-width: 1285px;
 }
 .block-editor__typewriter .wp-block:not([data-type="core/paragraph"]):not(.block-list-appender):not(.block-editor-default-block-appender):not(.editor-post-title):hover::before {
   content: "";
