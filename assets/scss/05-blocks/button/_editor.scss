@@ -138,6 +138,20 @@
 	&.is-style-squared {
 		border-radius: 0;
 	}
+
+	&.is-style-button-simple .wp-block-button__link:not(.has-background) {
+		background-color: transparent !important;
+		text-decoration: underline !important;
+
+		&:active {
+			background-color: transparent !important;
+		}
+
+		&:hover {
+			background-color: transparent !important;
+			color: var(--global--color-dark-yellow) !important;
+		}
+	}
 }
 
 .is-style-outline .wp-block-button__link[style*='radius'],

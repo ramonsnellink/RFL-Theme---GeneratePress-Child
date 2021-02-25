@@ -6,6 +6,22 @@
   --button--padding-horizontal: calc(2 * var(--button--padding-vertical));
 }
 
+.max-w-sm {
+  max-width: 640px;
+}
+
+.max-w-md {
+  max-width: 768px;
+}
+
+.max-w-lg {
+  max-width: 1024px;
+}
+
+.max-w-xl {
+  max-width: 1285px;
+}
+
 :root {
   --global--color-yellow: #f6d15e;
   --global--color-dark-yellow: #eab204;
@@ -147,10 +163,40 @@
 .wp-block-button.is-style-squared {
   border-radius: 0;
 }
+.wp-block-button.is-style-button-simple .wp-block-button__link:not(.has-background) {
+  background-color: transparent !important;
+  text-decoration: underline !important;
+}
+.wp-block-button.is-style-button-simple .wp-block-button__link:not(.has-background):active {
+  background-color: transparent !important;
+}
+.wp-block-button.is-style-button-simple .wp-block-button__link:not(.has-background):hover {
+  background-color: transparent !important;
+  color: var(--global--color-dark-yellow) !important;
+}
 
 .is-style-outline .wp-block-button__link[style*=radius],
 .wp-block-button__link[style*=radius] {
   outline-offset: 2px;
+}
+
+.wp-block-gallery.is-style-gallery-1lg-2sm .blocks-gallery-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+}
+.wp-block-gallery.is-style-gallery-1lg-2sm .blocks-gallery-item {
+  margin: 0px;
+}
+.wp-block-gallery.is-style-gallery-1lg-2sm .blocks-gallery-item:nth-child(1) {
+  grid-area: 1/1/3/2;
+}
+.wp-block-gallery.is-style-gallery-1lg-2sm .blocks-gallery-item:nth-child(2) {
+  grid-area: 1/2/2/3;
+}
+.wp-block-gallery.is-style-gallery-1lg-2sm .blocks-gallery-item:nth-child(3) {
+  grid-area: 2/2/3/3;
 }
 
 .wp-block-latest-posts {

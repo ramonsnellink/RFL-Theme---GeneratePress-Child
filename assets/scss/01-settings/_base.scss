@@ -15,6 +15,22 @@ $lg: 1024px;
 $xl: 1285px;
 $xxl: 1536px;
 
+.max-w-sm {
+	max-width: $sm;
+}
+
+.max-w-md {
+	max-width: $md;
+}
+
+.max-w-lg {
+	max-width: $lg;
+}
+
+.max-w-xl {
+	max-width: $xl;
+}
+
 // Font weights
 
 // Padding & Margin
