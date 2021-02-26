@@ -22,6 +22,10 @@
   max-width: 1285px;
 }
 
+.full-height .gb-inside-container {
+  height: 100%;
+}
+
 :root {
   --global--color-yellow: #f6d15e;
   --global--color-dark-yellow: #eab204;
@@ -197,6 +201,14 @@
 }
 .wp-block-gallery.is-style-gallery-1lg-2sm .blocks-gallery-item:nth-child(3) {
   grid-area: 2/2/3/3;
+}
+
+.wp-block-image.is-style-image-cover {
+  height: 100%;
+}
+.wp-block-image.is-style-image-cover img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .wp-block-latest-posts {

@@ -3,6 +3,9 @@
  * Block Styles
  */
 
+
+
+// Buttons
 add_action('init', function() {
 	register_block_style('core/button', [
 		'name' => 'button-highlight',
@@ -24,6 +27,7 @@ add_action('init', function() {
 	]);
 });
 
+// Gallery
 add_action('init', function() {
 	register_block_style('core/gallery', [
 		'name' => 'gallery-1lg-2sm',
@@ -31,4 +35,12 @@ add_action('init', function() {
 	]);
 });
 
+// Images
+
+add_action('init', function() {
+	register_block_style('core/image', [
+		'name' => 'image-cover',
+		'label' => __('Image 100% height - Object fit: cover', 'generatepress'),
+	]);
+});
 

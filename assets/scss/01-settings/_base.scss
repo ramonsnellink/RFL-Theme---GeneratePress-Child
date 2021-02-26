@@ -9,6 +9,7 @@
 	--button--padding-vertical: 10px;
 	--button--padding-horizontal: calc(2 * var(--button--padding-vertical));
 }
+
 $sm: 640px;
 $md: 768px;
 $lg: 1024px;
@@ -31,6 +32,9 @@ $xxl: 1536px;
 	max-width: $xl;
 }
 
+.full-height .gb-inside-container {
+	height: 100%;
+}
 // Font weights
 
 // Padding & Margin
