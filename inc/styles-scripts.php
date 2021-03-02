@@ -16,3 +16,18 @@ function rfl_styles() {
 // add_action( 'wp_enqueue_scripts', 'google_fonts',  99  );
 
 add_action( 'wp_enqueue_scripts', 'rfl_styles',  99  );
+
+add_filter( 'wp_trim_excerpt', 'tu_excerpt_metabox_more' );
+function tu_excerpt_metabox_more( $excerpt ) {
+    $output = $excerpt;
+
+    if ( has_excerpt() ) {
+        $output = sprintf( '%1$s <p class="read-more-container"><a class="read-more button" href="%2$s">%3$s</a></p>',
+            $excerpt,
+            get_permalink(),
+            __( 'Read more', 'generatepress' )
+        );
+    }
+	
+    return $output;
+}

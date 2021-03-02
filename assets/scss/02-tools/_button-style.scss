@@ -12,6 +12,22 @@
 	text-transform: lowercase;
 	text-decoration: none;
 
+	&::after {
+		content: '→';
+		position: absolute;
+		padding-left: 2px;
+		opacity: 0;
+		transition: padding-left 0.2s ease-in-out, opacity 0.2s ease-in-out;
+	}
+
+	&:hover {
+		&::after {
+			content: '→';
+			opacity: 1;
+			padding-left: 7px;
+		}
+	}
+
 	&:not(.has-background) {
 		color: var(--button--color-text);
 		background-color: var(--button--color-background);

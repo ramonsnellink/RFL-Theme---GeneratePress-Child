@@ -11,3 +11,34 @@
 // 		max-width: 1280px;
 // 	}
 // }
+
+.single-post .site-content {
+	padding: 0px 20px 0px 20px;
+}
+
+.inside-article * {
+	max-width: 800px;
+}
+
+.inside-article {
+	max-width: 800px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.inside-article .entry-content {
+	max-width: 1285px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.inside-article img {
+	margin: 0px calc((767px - 1245px) / 2);
+	max-width: 1245px;
+	width: 1245px;
+}
+
+@media screen and (min-width: 1280px) {
+}

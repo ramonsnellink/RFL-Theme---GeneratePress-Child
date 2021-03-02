@@ -1,13 +1,31 @@
 // /* Site Header
 // ---------------------------------------------------------------------------------------------------- */
 
+// sticky header
+.site-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2000;
+}
+
+//fix for sticky header
+body {
+	margin-top: 60px;
+}
+//fix for admin bar sticky
+.admin-bar .site-header {
+	margin-top: 30px;
+}
+
 .inside-header {
 	padding: 0px 20px;
+	max-width: $xl;
 }
 
 .site-logo {
 	& img {
-		max-width: 230px;
+		max-width: 180px;
 		height: auto;
 	}
 }
@@ -56,6 +74,7 @@
 		}
 	}
 }
+
 .menu-toggle {
 	color: var(--main--color-text);
 
@@ -68,7 +87,18 @@
 	}
 }
 
+// Fix GP dropdown arrow right padding
+.menu-item-has-children .dropdown-menu-toggle {
+	padding-right: 10px;
+}
+
 @media screen and (min-width: 1024px) {
+	.site-logo {
+		& img {
+			max-width: 240px;
+		}
+	}
+
 	.main-nav {
 		& .menu {
 			& .menu-item {

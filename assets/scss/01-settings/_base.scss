@@ -14,7 +14,7 @@ $sm: 640px;
 $md: 768px;
 $lg: 1024px;
 $xl: 1285px;
-$xxl: 1536px;
+$xxl: 1540px;
 
 .max-w-sm {
 	max-width: $sm;
@@ -35,6 +35,19 @@ $xxl: 1536px;
 .full-height .gb-inside-container {
 	height: 100%;
 }
+
+.rounded-sm > * {
+	border-radius: 5px;
+}
+
+.rounded-md > * {
+	border-radius: 10px;
+}
+
+.rounded-lg > * {
+	border-radius: 20px;
+}
+
 // Font weights
 
 // Padding & Margin

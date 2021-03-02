@@ -192,3 +192,25 @@ input[type='reset'],
 		width: 100%;
 	}
 }
+
+// GeneratePress:
+
+.gb-button.arrow-after {
+	position: relative;
+	display: inline-block;
+	&::after {
+		content: '→';
+		position: absolute;
+		padding-left: 2px;
+		opacity: 0;
+		transition: padding-left 0.2s ease-in-out, opacity 0.2s ease-in-out;
+	}
+
+	&:hover {
+		&::after {
+			content: '→';
+			opacity: 1;
+			padding-left: 7px;
+		}
+	}
+}

@@ -30,6 +30,23 @@ hr {
 	margin-bottom: 1.5em;
 }
 
+ol,
+ul {
+	margin: 0 0 1.5em 2em;
+	list-style-type: square;
+}
+
+form.fluent_form_1 .wpf_has_custom_css.ff-btn-submit {
+	text-align: center;
+	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
+	font-weight: var(--font-weight-strong);
+	font-size: 0.9em;
+}
+
+.fluentform .ff-btn:hover {
+	opacity: 1 !important;
+}
+
 // .entry-content .alignwide,
 // .entry-content .alignfull {
 // 	margin: 32px calc(50% - 50vw);
