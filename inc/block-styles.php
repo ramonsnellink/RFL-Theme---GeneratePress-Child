@@ -28,10 +28,18 @@ add_action('init', function() {
 });
 
 // Gallery
+
 add_action('init', function() {
 	register_block_style('core/gallery', [
 		'name' => 'gallery-1lg-2sm',
 		'label' => __('Gallery with 1 large image and 2 to the side', 'generatepress'),
+	]);
+});
+
+add_action('init', function() {
+	register_block_style('core/gallery', [
+		'name' => 'gallery-scroll',
+		'label' => __('Gallery full width with scroll overflow', 'generatepress'),
 	]);
 });
 

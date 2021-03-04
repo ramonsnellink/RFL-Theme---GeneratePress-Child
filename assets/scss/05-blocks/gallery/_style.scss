@@ -21,7 +21,6 @@
 }
 
 // Custom Gallery Lay-out. 1 large with 2 small images to the side
-
 .wp-block-gallery.is-style-gallery-1lg-2sm {
 	& .blocks-gallery-grid {
 		display: grid;
@@ -35,7 +34,39 @@
 	}
 }
 
+.wp-block-gallery.is-style-gallery-scroll {
+	// flex-wrap: nowrap;
+
+	& .blocks-gallery-grid {
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+	}
+
+	& .blocks-gallery-item {
+		width: 400px;
+		margin-right: 5px;
+
+		&:nth-of-type(4n) {
+			margin-right: 5px;
+		}
+
+		& figure {
+			width: 400px;
+		}
+
+		& img {
+		}
+	}
+}
+
+.red {
+	border: 1px solid red;
+}
+
+// Custom Gallery Layout. Full width with overflow scroll
+
 @media screen and (min-width: 768px) {
+	// Custom Gallery Lay-out. 1 large with 2 small images to the side
 	.wp-block-gallery.is-style-gallery-1lg-2sm {
 		& .blocks-gallery-grid {
 			display: grid;
@@ -57,4 +88,6 @@
 			}
 		}
 	}
+
+	// Custom Gallery Layout. Full width with overflow scroll
 }

@@ -47,28 +47,16 @@ form.fluent_form_1 .wpf_has_custom_css.ff-btn-submit {
 	opacity: 1 !important;
 }
 
-// .entry-content .alignwide,
-// .entry-content .alignfull {
-// 	margin: 32px calc(50% - 50vw);
-// 	max-width: 100vw;
-// 	width: 100vw;
-// }
-// .entry-content .alignwide {
-// 	max-width: 1540px;
-// }
-
-// @media (max-width: 920px) {
-// 	.entry-content .alignwide {
-// 		margin: 32px calc((767px - 920px) / 2);
-// 		max-width: 920px;
-// 		width: 920px;
-// 	}
-// }
-
 .entry-content .alignwide {
-	margin: 32px calc(25% - 25vw);
-	max-width: 100vw;
-	width: 1540px;
-	display: flex;
+	max-width: 1245px;
+	width: 100vw;
+	margin-left: 50%;
+	transform: translateX(-50%);
 }
 
+.entry-content .alignfull {
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	max-width: 100vw;
+	width: 100vw;
+}

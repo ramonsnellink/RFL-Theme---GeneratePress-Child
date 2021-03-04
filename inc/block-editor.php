@@ -59,7 +59,7 @@ function tu_custom_color_palettes( $palettes ) {
 }
 
 /** 
- * Add Reusable Blocks 
+ * Add Reusable Blocks in menu
 */
 
 function be_reusable_blocks_admin_menu() {

@@ -1,43 +1,75 @@
 // Werkt niet, want er zit soms meer dan alleen een IMG in een P...
-// .single-post .post .entry-content {
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-items: center;
-// 	& p {
-// 		max-width: 640px;
-// 	}
 
-// 	& p.image-in-p {
-// 		max-width: 1280px;
-// 	}
-// }
+.single-post {
+	& .site.grid-container {
+		max-width: none;
+	}
+	& .site-content {
+		padding: 0;
+	}
 
-.single-post .site-content {
-	padding: 0px 20px 0px 20px;
-}
+	& .inside-article {
+		margin: 0 auto;
 
-.inside-article * {
-	max-width: 800px;
-}
+		& .entry-header {
+			padding: 60px 20px 80px 20px;
+			background-color: var(--global--color-background-light);
 
-.inside-article {
-	max-width: 800px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0 auto;
-}
+			margin: 0 auto;
 
-.inside-article .entry-content {
-	max-width: 1285px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.inside-article img {
-	margin: 0px calc((767px - 1245px) / 2);
-	max-width: 1245px;
-	width: 1245px;
+			& .entry-title {
+				margin: 0 auto;
+				max-width: 700px;
+				margin-bottom: 20px;
+			}
+
+			& .entry-category {
+				max-width: 690px;
+				margin: 0 auto;
+				margin-bottom: 20px;
+
+				&-link {
+					background-color: var(--button--hightlight--color-background);
+					color: var(--button--hightlight--color-text);
+					padding: 0.3rem 0.8rem;
+					font-weight: var(--font-weight-strong);
+					text-transform: uppercase;
+					font-size: 0.8em;
+
+					&:hover {
+						background-color: var(--button--hightlight--color-background-hover);
+						color: var(--button--hightlight--color-text-hover);
+					}
+				}
+			}
+
+			& .post__excerpt {
+				margin: 0 auto;
+				max-width: 690px;
+				padding-top: 10px;
+			}
+		}
+
+		& .entry-content {
+			max-width: 690px;
+			margin: 0 auto;
+			padding: 0px 20px 60px 20px;
+		}
+		& .entry-meta {
+			max-width: 1285px;
+			padding: 20px;
+			margin: 0 auto;
+		}
+
+		& img,
+		iframe {
+			// margin-bottom: 0px;
+			max-width: 1245px;
+			width: 100vw;
+			margin-left: 50%;
+			transform: translateX(-50%);
+		}
+	}
 }
 
 @media screen and (min-width: 1280px) {

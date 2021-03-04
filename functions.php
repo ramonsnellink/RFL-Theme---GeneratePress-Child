@@ -24,6 +24,10 @@ $theme_dir =  get_stylesheet_directory();
 
 require $theme_dir . '/inc/styles-scripts.php';
 
+// Custom Filters and Functions
+
+require $theme_dir . '/inc/custom-filters.php';
+
 // Block Editor
 require $theme_dir . '/inc/block-editor.php';
 require $theme_dir . '/inc/block-styles.php';
@@ -33,5 +37,8 @@ require $theme_dir . '/inc/block-patterns.php';
 // Cleanup
 
 require $theme_dir . '/inc/cleanup.php';
+
+
+
 
 
