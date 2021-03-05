@@ -18,8 +18,11 @@
 }
 
 .archive .post,
+.archive .page,
 .blog .post,
-.search .post {
+.blog .page,
+.search .post,
+.search .page {
 	max-width: none;
 	background-color: var(--global--color-background-light);
 
@@ -123,8 +126,11 @@
 // Tablet+
 @media only screen and (min-width: 1024px) {
 	.archive .post,
+	.archive .page,
 	.blog .post,
-	.search .post {
+	.blog .page,
+	.search .post,
+	.search .page {
 		& .inside-article {
 			grid-template-columns: 1fr 1fr;
 			align-items: start;

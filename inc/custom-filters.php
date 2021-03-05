@@ -14,11 +14,11 @@ add_filter( 'wp_trim_excerpt', 'tu_excerpt_metabox_more' );
 function tu_excerpt_metabox_more( $excerpt ) {
     $output = $excerpt;
 
-    if ( has_excerpt() && !is_single() ) {
+    if ( has_excerpt() && !is_single() && !is_page()) {
         $output = sprintf( '%1$s <p class="read-more-container"><a class="read-more button" href="%2$s">%3$s</a></p>',
             $excerpt,
             get_permalink(),
-            __( 'Read more', 'generatepress' )
+            __( 'Lees meer', 'generatepress' )
         );
     }
 	
@@ -51,3 +51,5 @@ add_filter( 'generate_back_to_top_scroll_speed', 'tu_back_to_top_scroll_speed' )
 function tu_back_to_top_scroll_speed() {
     return 200; // milliseconds
 }
+
+add_post_type_support( 'page', 'excerpt' );

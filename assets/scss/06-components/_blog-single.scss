@@ -12,7 +12,7 @@
 		margin: 0 auto;
 
 		& .entry-header {
-			padding: 60px 20px 80px 20px;
+			padding: 40px 20px 40px 20px;
 			background-color: var(--global--color-background-light);
 
 			margin: 0 auto;
@@ -72,5 +72,12 @@
 	}
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
+	.single-post {
+		& .inside-article {
+			& .entry-header {
+				padding: 60px 20px 80px 20px;
+			}
+		}
+	}
 }

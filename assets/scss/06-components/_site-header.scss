@@ -1,21 +1,33 @@
 // /* Site Header
 // ---------------------------------------------------------------------------------------------------- */
 
-// sticky header
-.site-header {
+.progress-container {
 	position: fixed;
 	top: 0;
+	left: 0;
 	width: 100%;
-	z-index: 2000;
+	height: 2px; /* height of bar */
+	background: white; /* Background color */
+	z-index: 10000; /* increase z-index to bring in front of slider */
 }
 
-//fix for sticky header
-body {
-	margin-top: 60px;
+.progress-bar {
+	height: 2px;
+	background: var(--global--color-background-highlight); /* Progress bar color */
+	width: 0%;
 }
-//fix for admin bar sticky
-.admin-bar .site-header {
-	margin-top: 30px;
+
+/* adjust position of progress when admin bar is present */
+.admin-bar .progress-container {
+	top: 33px;
+}
+
+#site-navigation,
+#mobile-header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 2px; // for progress bar
+	box-shadow: 0 1.8px 5.3px rgba(0, 0, 0, 0.016);
 }
 
 .inside-header {
@@ -30,11 +42,17 @@ body {
 	}
 }
 
+.main-navigation.toggled .main-nav li {
+	width: inherit;
+	text-align: center;
+}
+
 .main-nav {
 	& .menu {
 		& .menu-item {
-			margin-left: 0.3em;
-			margin-bottom: 0.5em;
+			// margin-left: 0.3em;
+			// margin-bottom: 0.5em;
+			margin: 0.5em 0.3em;
 
 			& a {
 				color: var(--main--color-text);
@@ -102,8 +120,19 @@ body {
 	.main-nav {
 		& .menu {
 			& .menu-item {
-				margin-bottom: 0;
+				margin-left: 0.3em;
+
+				& a {
+					padding: 7px 14px;
+				}
 			}
 		}
+	}
+
+	.navigation-search {
+		max-width: 400px;
+		border: thin solid var(--global--color-lighter-gray);
+		margin-left: auto;
+		margin-right: 80px;
 	}
 }
