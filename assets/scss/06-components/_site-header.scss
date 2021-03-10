@@ -22,6 +22,10 @@
 	top: 33px;
 }
 
+.admin-bar #site-navigation,
+.admin-bar #mobile-header {
+	top: 31px;
+}
 #site-navigation,
 #mobile-header {
 	position: -webkit-sticky;
@@ -50,8 +54,6 @@
 .main-nav {
 	& .menu {
 		& .menu-item {
-			// margin-left: 0.3em;
-			// margin-bottom: 0.5em;
 			margin: 0.5em 0.3em;
 
 			& a {
@@ -110,6 +112,34 @@
 	padding-right: 10px;
 }
 
+.menu-bar-items {
+	& .menu-bar-item {
+		> a {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		&.whatsapp-item {
+			& a {
+				display: inline-flex;
+				align-self: center;
+				transition: opacity ease-in-out 0.2s;
+
+				&:hover {
+					opacity: 0.8;
+				}
+
+				& svg {
+					top: 0.25em;
+					position: relative;
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+}
+
 @media screen and (min-width: 1024px) {
 	.site-logo {
 		& img {
@@ -120,7 +150,7 @@
 	.main-nav {
 		& .menu {
 			& .menu-item {
-				margin-left: 0.3em;
+				margin-left: 0.2em;
 
 				& a {
 					padding: 7px 14px;
@@ -128,11 +158,7 @@
 			}
 		}
 	}
-
-	.navigation-search {
-		max-width: 400px;
-		border: thin solid var(--global--color-lighter-gray);
-		margin-left: auto;
-		margin-right: 80px;
+	.menu-bar-items {
+		margin-left: 40px;
 	}
 }

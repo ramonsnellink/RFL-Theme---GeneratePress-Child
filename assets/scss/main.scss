@@ -30,7 +30,7 @@
 @import '06-components/blog-single';
 @import '06-components/page-single';
 
-// @import "06-components/posts-and-pages";
+@import '06-components/posts-and-pages';
 @import '06-components/entry-content';
 
 @import '06-components/pagination';
@@ -48,3 +48,5 @@
 // @import "07-utilities/color-palette";
 // @import "07-utilities/measure";
 // @import "07-utilities/ie";
+
+@import '07-utilities/general-utilities';

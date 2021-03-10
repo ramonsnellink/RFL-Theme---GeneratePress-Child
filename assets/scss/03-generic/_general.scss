@@ -47,17 +47,3 @@ form.fluent_form_1 .wpf_has_custom_css.ff-btn-submit {
 .fluentform .ff-btn:hover {
 	opacity: 1 !important;
 }
-
-.entry-content .alignwide {
-	max-width: 1245px;
-	width: 100vw;
-	margin-left: 50%;
-	transform: translateX(-50%);
-}
-
-.entry-content .alignfull {
-	margin-left: calc(50% - 50vw);
-	margin-right: calc(50% - 50vw);
-	max-width: 100vw;
-	width: 100vw;
-}

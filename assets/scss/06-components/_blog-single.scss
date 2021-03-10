@@ -6,6 +6,7 @@
 	}
 	& .site-content {
 		padding: 0;
+		overflow-x: hidden;
 	}
 
 	& .inside-article {
@@ -63,7 +64,7 @@
 
 		& img,
 		iframe {
-			// margin-bottom: 0px;
+			margin-bottom: 0px;
 			max-width: 1245px;
 			width: 100vw;
 			margin-left: 50%;
@@ -72,6 +73,20 @@
 	}
 }
 
+@media screen and (min-width: 730px) {
+	.single-post {
+		& .inside-article {
+			& img,
+			iframe {
+				// margin-bottom: 0px;
+				// max-width: 1245px;
+				// width: 100vw;
+				// margin-left: 50%;
+				// transform: translateX(-50%);
+			}
+		}
+	}
+}
 @media screen and (min-width: 1024px) {
 	.single-post {
 		& .inside-article {
