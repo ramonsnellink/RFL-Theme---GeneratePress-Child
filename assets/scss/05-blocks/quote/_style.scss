@@ -1,0 +1,17 @@
+.wp-block-quote {
+	&.is-style-quotation-marks {
+		font-size: 2em;
+		font-weight: 700;
+		border: none;
+
+		& p {
+			&::before {
+				content: '“';
+			}
+
+			&::after {
+				content: '”';
+			}
+		}
+	}
+}

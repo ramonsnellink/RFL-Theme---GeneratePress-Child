@@ -27,15 +27,18 @@
   height: 100%;
 }
 
-.rounded-sm > * {
+.rounded-sm > img,
+.wp-block-image:not(.is-style-rounded).rounded-sm img {
   border-radius: 5px;
 }
 
-.rounded-md > * {
+.rounded-md > img,
+.wp-block-image:not(.is-style-rounded).rounded-md img {
   border-radius: 10px;
 }
 
-.rounded-lg > * {
+.rounded-lg > img,
+.wp-block-image:not(.is-style-rounded).rounded-lg img {
   border-radius: 20px;
 }
 

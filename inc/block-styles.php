@@ -52,3 +52,11 @@ add_action('init', function() {
 	]);
 });
 
+// Block Quotes
+
+add_action('init', function() {
+	register_block_style('core/quote', [
+		'name' => 'quotation-marks',
+		'label' => __('Quote with Quotation marks', 'generatepress'),
+	]);
+});

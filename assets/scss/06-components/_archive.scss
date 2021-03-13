@@ -125,13 +125,18 @@
 
 // No Results
 
-.no-results {
+.no-results,
+.error404 .site {
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	padding-top: 100px;
 	padding-bottom: 100px;
 	background-color: var(--global--color-background-mid);
+}
+
+.error404 .site {
+	background-color: inherit;
 }
 
 // Tablet+
