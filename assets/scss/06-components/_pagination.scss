@@ -4,6 +4,8 @@
 	justify-content: center;
 
 	& .nav-links {
+		width: 100%;
+		text-align: center;
 		& .page-numbers {
 			color: var(--button--color-text);
 			cursor: pointer;
@@ -20,28 +22,6 @@
 			&:hover {
 				background-color: var(--button--color-background-hover);
 				color: var(--button--color-text-hover);
-			}
-		}
-
-		& .prev {
-			margin-right: 5px;
-		}
-
-		& .next {
-			margin-left: 5px;
-		}
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.paging-navigation {
-		& .nav-links {
-			& .prev {
-				margin-right: 30px;
-			}
-
-			& .next {
-				margin-left: 30px;
 			}
 		}
 	}

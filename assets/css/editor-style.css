@@ -367,6 +367,38 @@
     height: 100%;
   }
 }
+.wp-block-quote.is-style-quotation-marks {
+  border: none !important;
+  padding: 0;
+  margin: 0.5em 0;
+}
+.wp-block-quote.is-style-quotation-marks p {
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.2em;
+  font-style: normal;
+}
+.wp-block-quote.is-style-quotation-marks p::before {
+  content: "“";
+}
+.wp-block-quote.is-style-quotation-marks p::after {
+  content: "”";
+}
+.wp-block-quote.is-style-quotation-marks cite {
+  font-style: normal;
+  font-size: 0.8em;
+}
+.wp-block-quote.is-style-quotation-marks cite::before {
+  content: "- ";
+}
+
+@media screen and (min-width: 1024px) {
+  .wp-block-quote.is-style-quotation-marks p {
+    font-size: 1.4em;
+    line-height: 1.6;
+  }
+}
 hr {
   border-style: none;
   border-bottom: 2px solid var(--main--color-text) !important;

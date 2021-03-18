@@ -556,15 +556,61 @@ input[type=reset]:hover,
   }
 }
 .wp-block-quote.is-style-quotation-marks {
-  font-size: 2em;
-  font-weight: 700;
   border: none;
+  padding: 0;
+  margin: 0.5em 0;
+}
+.wp-block-quote.is-style-quotation-marks p {
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.2em;
+  font-style: normal;
 }
 .wp-block-quote.is-style-quotation-marks p::before {
   content: "“";
 }
 .wp-block-quote.is-style-quotation-marks p::after {
   content: "”";
+}
+.wp-block-quote.is-style-quotation-marks p::before, .wp-block-quote.is-style-quotation-marks p::after {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+.wp-block-quote.is-style-quotation-marks cite {
+  font-style: normal;
+  font-size: 0.8em;
+}
+.wp-block-quote.is-style-quotation-marks cite::before {
+  content: "- ";
+}
+
+@media screen and (min-width: 1024px) {
+  .wp-block-quote.is-style-quotation-marks p {
+    font-size: 1.4em;
+    line-height: 1.6;
+  }
+}
+.add-quote-marks {
+  position: relative;
+}
+.add-quote-marks::before {
+  top: -35px;
+  content: "“";
+}
+.add-quote-marks::after {
+  content: "”";
+  bottom: 0px;
+  top: calc(100% - 40px);
+}
+.add-quote-marks::before, .add-quote-marks::after {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  position: absolute;
+  font-size: 10rem;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  left: calc(50% - 1.5rem);
+  color: var(--global--color-background-mid);
 }
 
 hr {
@@ -920,6 +966,10 @@ body.page-id-11 #page {
   display: flex;
   justify-content: center;
 }
+.paging-navigation .nav-links {
+  width: 100%;
+  text-align: center;
+}
 .paging-navigation .nav-links .page-numbers {
   color: var(--button--color-text);
   cursor: pointer;
@@ -938,21 +988,7 @@ body.page-id-11 #page {
   background-color: var(--button--color-background-hover);
   color: var(--button--color-text-hover);
 }
-.paging-navigation .nav-links .prev {
-  margin-right: 5px;
-}
-.paging-navigation .nav-links .next {
-  margin-left: 5px;
-}
 
-@media screen and (min-width: 768px) {
-  .paging-navigation .nav-links .prev {
-    margin-right: 30px;
-  }
-  .paging-navigation .nav-links .next {
-    margin-left: 30px;
-  }
-}
 .archive > .grid-container,
 .blog > .grid-container,
 .search > .grid-container {
