@@ -26,7 +26,7 @@
 
 		& cite {
 			font-style: normal;
-			font-size: 0.8em;
+			font-size: 0.8em !important;
 			&::before {
 				content: '- ';
 			}
@@ -38,8 +38,8 @@
 	.wp-block-quote {
 		&.is-style-quotation-marks {
 			& p {
-				font-size: 1.4em;
-				line-height: 1.6;
+				font-size: 1.4em !important;
+				line-height: 1.6 !important;
 			}
 		}
 	}

@@ -1,17 +1,6 @@
 // @import 'settings/colors';
 // @import 'settings/base';
 
-// .block-editor__typewriter {
-// 	@import 'tools/button-style';
-// 	@import 'partials/general';
-// 	@import 'partials/blocks-core';
-// 	@import 'partials/blocks-custom';
-// 	@import 'partials/entry-content';
-// 	@import 'partials/gutenberg';
-
-// 	@import 'partials/typography';
-// }
-
 // .editor-styles-wrapper,
 // .wp-block-heading,
 // .editor-rich-text__tinymce {
@@ -19,7 +8,7 @@
 
 @import '01-settings/base';
 @import '01-settings/colors';
-
+@import '01-settings/typography';
 @import '02-tools/button-style';
 
 // @import "04-elements/blockquote";
@@ -29,9 +18,7 @@
 
 @import '05-blocks/blocks-editor';
 
-.block-editor__typewriter {
-	@import '06-components/editor';
-}
+@import '06-components/editor';
 
 @import '07-utilities/color-palette';
 @import '07-utilities/general-utilities';

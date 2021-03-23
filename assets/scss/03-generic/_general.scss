@@ -12,6 +12,17 @@
 body {
 	overflow-x: hidden;
 	margin-top: 2px; /* match height of progressbar */
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol', 'Noto Color Emoji';
+	font-size: 1.125rem;
+	line-height: 1.8em;
+	color: var(--main--color-text);
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -46,4 +57,77 @@ form.fluent_form_1 .wpf_has_custom_css.ff-btn-submit {
 
 .fluentform .ff-btn:hover {
 	opacity: 1 !important;
+}
+
+p:empty:before {
+	display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: var(--font-weight-strong);
+}
+
+h1 {
+	font-size: $h1-font-size;
+	line-height: $h1-line-height;
+}
+
+h2 {
+	font-size: $h2-font-size;
+	line-height: $h2-line-height;
+}
+
+h3 {
+	font-size: $h3-font-size;
+	line-height: $h3-line-height;
+}
+
+h4 {
+	font-size: $h4-font-size;
+	line-height: $h4-line-height;
+}
+
+h5,
+h6 {
+	font-size: $h5-6-font-size;
+	line-height: $h5-6-line-height;
+}
+
+// Tablet+
+
+@media only screen and (min-width: 1024px) {
+	body {
+		line-height: 2;
+	}
+
+	h1 {
+		font-size: $h1-font-size-desktop;
+		line-height: $h1-line-height-desktop;
+	}
+
+	h2 {
+		font-size: $h2-font-size-desktop;
+		line-height: $h2-line-height-desktop;
+	}
+
+	h3 {
+		font-size: $h3-font-size-desktop;
+		line-height: $h3-line-height-desktop;
+	}
+
+	h4 {
+		font-size: $h4-font-size-desktop;
+		line-height: $h4-line-height-desktop;
+	}
+
+	h5,
+	h6 {
+		font-size: $h5-6-font-size-desktop;
+		line-height: $h5-6-line-height-desktop;
+	}
 }

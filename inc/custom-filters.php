@@ -53,3 +53,14 @@ function tu_back_to_top_scroll_speed() {
 }
 
 add_post_type_support( 'page', 'excerpt' );
+
+// Skip lazy load for featured image on single and page
+
+add_filter( 'wp_get_attachment_image_attributes', function( $attr ) {
+    if (is_single() || is_page()) {
+        $attr['class'] .= ' skip-lazy';
+
+    }
+    return $attr;
+} );
+

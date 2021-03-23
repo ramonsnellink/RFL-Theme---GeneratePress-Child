@@ -1,18 +1,57 @@
-html {
-	line-height: 1.8em;
-}
-
-body {
+.block-editor-block-list__layout {
 	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-		'Segoe UI Symbol', 'Noto Color Emoji';
-	font-size: 1.125rem;
-	line-height: 1.8em;
-	color: var(--main--color-text);
-
-	font-weight: normal;
+		'Segoe UI Symbol', 'Noto Color Emoji' !important;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+	& p {
+		font-size: 1.125rem !important;
+		line-height: 1.8em !important;
+		color: var(--main--color-text);
+		font-weight: normal;
+	}
+
+	& .block-editor-block-list__block {
+		& a {
+			text-decoration: underline;
+			color: var(--link--color-text) !important;
+		}
+	}
+
+	& h1,
+	& h2,
+	& h3,
+	& h4,
+	& h5,
+	& h6 {
+		font-weight: var(--font-weight-strong);
+	}
+
+	h1 {
+		font-size: $h1-font-size !important;
+		line-height: $h1-line-height !important;
+	}
+
+	h2 {
+		font-size: $h2-font-size !important;
+		line-height: $h2-line-height !important;
+	}
+
+	h3 {
+		font-size: $h3-font-size !important;
+		line-height: $h3-line-height !important;
+	}
+
+	h4 {
+		font-size: $h4-font-size !important;
+		line-height: $h4-line-height !important;
+	}
+
+	h5,
+	h6 {
+		font-size: $h5-6-font-size !important;
+		line-height: $h5-6-line-height !important;
+	}
 }
 
 // Links styles
@@ -26,6 +65,37 @@ body {
 	&:focus {
 		outline: 2px solid var(--wp--style--color--link, var(--global--color-primary));
 		text-decoration: none;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.block-editor-block-list__layout,
+	.editor-styles-wrapper {
+		h1 {
+			font-size: $h1-font-size-desktop !important;
+			line-height: $h1-line-height-desktop !important;
+		}
+
+		h2 {
+			font-size: $h2-font-size-desktop !important;
+			line-height: $h2-line-height-desktop !important;
+		}
+
+		h3 {
+			font-size: $h3-font-size-desktop !important;
+			line-height: $h3-line-height-desktop !important;
+		}
+
+		h4 {
+			font-size: $h4-font-size-desktop !important;
+			line-height: $h4-line-height-desktop !important;
+		}
+
+		h5,
+		h6 {
+			font-size: $h5-6-font-size-desktop !important;
+			line-height: $h5-6-line-height-desktop !important;
+		}
 	}
 }
 
