@@ -15,7 +15,6 @@
 		}
 
 		a:focus img {
-			// outline-offset: 2px;
 		}
 	}
 }
@@ -25,7 +24,6 @@
 	& .blocks-gallery-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		// grid-template-rows: repeat(2, 1fr);
 		gap: 5px;
 	}
 
@@ -34,16 +32,15 @@
 	}
 }
 
+// Custom Gallery, overflow horizontal scroll
 .wp-block-gallery.is-style-gallery-scroll {
-	// flex-wrap: nowrap;
-
 	& .blocks-gallery-grid {
 		flex-wrap: nowrap;
 		overflow-x: scroll;
 	}
 
 	& .blocks-gallery-item {
-		width: 400px;
+		width: 350px; // otherwise it won't show part of next image
 		margin-right: 5px;
 
 		&:nth-of-type(4n) {
@@ -51,7 +48,7 @@
 		}
 
 		& figure {
-			width: 400px;
+			width: 350px;
 		}
 
 		& img {
@@ -86,4 +83,16 @@
 	}
 
 	// Custom Gallery Layout. Full width with overflow scroll
+
+	.wp-block-gallery.is-style-gallery-scroll {
+		// flex-wrap: nowrap;
+
+		& .blocks-gallery-item {
+			width: 400px;
+
+			& figure {
+				width: 400px;
+			}
+		}
+	}
 }

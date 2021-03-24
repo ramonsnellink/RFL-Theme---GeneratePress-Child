@@ -143,12 +143,12 @@ h6 {
 }
 
 h1 {
-  font-size: 1.9em;
+  font-size: 1.6em;
   line-height: 1.1111111;
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   line-height: 1.3333333;
 }
 
@@ -168,7 +168,7 @@ h6 {
   line-height: 1.5;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   body {
     line-height: 2;
   }
@@ -425,14 +425,14 @@ input[type=reset]:hover,
   overflow-x: scroll;
 }
 .wp-block-gallery.is-style-gallery-scroll .blocks-gallery-item {
-  width: 400px;
+  width: 350px;
   margin-right: 5px;
 }
 .wp-block-gallery.is-style-gallery-scroll .blocks-gallery-item:nth-of-type(4n) {
   margin-right: 5px;
 }
 .wp-block-gallery.is-style-gallery-scroll .blocks-gallery-item figure {
-  width: 400px;
+  width: 350px;
 }
 @media screen and (min-width: 768px) {
   .wp-block-gallery.is-style-gallery-1lg-2sm .blocks-gallery-grid {
@@ -448,6 +448,13 @@ input[type=reset]:hover,
   }
   .wp-block-gallery.is-style-gallery-1lg-2sm .blocks-gallery-item:nth-child(3) {
     grid-area: 2/2/3/3;
+  }
+
+  .wp-block-gallery.is-style-gallery-scroll .blocks-gallery-item {
+    width: 400px;
+  }
+  .wp-block-gallery.is-style-gallery-scroll .blocks-gallery-item figure {
+    width: 400px;
   }
 }
 .wp-block-image.is-style-image-cover {
@@ -797,7 +804,7 @@ hr .wp-block-separator.is-style-wide {
 }
 .single-post .inside-article .entry-header .entry-title {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 690px;
   margin-bottom: 20px;
 }
 .single-post .inside-article .entry-header .entry-category {
@@ -835,15 +842,27 @@ hr .wp-block-separator.is-style-wide {
 .single-post .inside-article img,
 .single-post .inside-article iframe {
   margin-bottom: 0px;
-  max-width: 1245px;
+  max-width: 1285px;
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
+@media screen and (min-width: 730px) {
+  .single-post .inside-article img,
+.single-post .inside-article iframe {
+    width: 690px;
+    padding: 0px 20px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .single-post .inside-article .entry-header {
     padding: 60px 20px 80px 20px;
+    max-width: inherit;
+  }
+  .single-post .inside-article img,
+.single-post .inside-article iframe {
+    width: 100vw;
   }
 }
 @keyframes bounce {
