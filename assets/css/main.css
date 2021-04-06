@@ -152,6 +152,10 @@ h2 {
   line-height: 1.3333333;
 }
 
+.single-post h2 {
+  margin-top: 0.5em;
+}
+
 h3 {
   font-size: 1.3em;
   line-height: 1.6;
